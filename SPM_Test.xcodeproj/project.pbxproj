@@ -8,19 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6C30B7C32C3C07D6006D06CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B7C22C3C07D6006D06CB /* AppDelegate.swift */; };
-		6C30B7C52C3C07D6006D06CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B7C42C3C07D6006D06CB /* SceneDelegate.swift */; };
-		6C30B7C72C3C07D6006D06CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B7C62C3C07D6006D06CB /* ViewController.swift */; };
-		6C30B7CA2C3C07D6006D06CB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B7C92C3C07D6006D06CB /* Base */; };
 		6C30B7CC2C3C07D7006D06CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B7CB2C3C07D7006D06CB /* Assets.xcassets */; };
 		6C30B7CF2C3C07D7006D06CB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B7CE2C3C07D7006D06CB /* Base */; };
+		6C30B7D82C3C086D006D06CB /* PresentationLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 6C30B7D72C3C086D006D06CB /* PresentationLayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C30B7BF2C3C07D6006D06CB /* SPM_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPM_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C30B7C22C3C07D6006D06CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C30B7C42C3C07D6006D06CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C30B7C62C3C07D6006D06CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6C30B7C92C3C07D6006D06CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C30B7CB2C3C07D7006D06CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C30B7CE2C3C07D7006D06CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C30B7D02C3C07D7006D06CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C30B7D82C3C086D006D06CB /* PresentationLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				6C30B7C22C3C07D6006D06CB /* AppDelegate.swift */,
-				6C30B7C42C3C07D6006D06CB /* SceneDelegate.swift */,
-				6C30B7C62C3C07D6006D06CB /* ViewController.swift */,
-				6C30B7C82C3C07D6006D06CB /* Main.storyboard */,
 				6C30B7CB2C3C07D7006D06CB /* Assets.xcassets */,
 				6C30B7CD2C3C07D7006D06CB /* LaunchScreen.storyboard */,
 				6C30B7D02C3C07D7006D06CB /* Info.plist */,
@@ -83,6 +76,9 @@
 			dependencies = (
 			);
 			name = SPM_Test;
+			packageProductDependencies = (
+				6C30B7D72C3C086D006D06CB /* PresentationLayer */,
+			);
 			productName = SPM_Test;
 			productReference = 6C30B7BF2C3C07D6006D06CB /* SPM_Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +107,9 @@
 				Base,
 			);
 			mainGroup = 6C30B7B62C3C07D6006D06CB;
+			packageReferences = (
+				6C30B7D62C3C086D006D06CB /* XCRemoteSwiftPackageReference "PresentationLayer" */,
+			);
 			productRefGroup = 6C30B7C02C3C07D6006D06CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +126,6 @@
 			files = (
 				6C30B7CC2C3C07D7006D06CB /* Assets.xcassets in Resources */,
 				6C30B7CF2C3C07D7006D06CB /* Base in Resources */,
-				6C30B7CA2C3C07D6006D06CB /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +136,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C30B7C72C3C07D6006D06CB /* ViewController.swift in Sources */,
 				6C30B7C32C3C07D6006D06CB /* AppDelegate.swift in Sources */,
-				6C30B7C52C3C07D6006D06CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C30B7C82C3C07D6006D06CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C30B7C92C3C07D6006D06CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6C30B7CD2C3C07D7006D06CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +285,7 @@
 				INFOPLIST_FILE = SPM_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +313,7 @@
 				INFOPLIST_FILE = SPM_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C30B7D62C3C086D006D06CB /* XCRemoteSwiftPackageReference "PresentationLayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/teslatess/PresentationLayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C30B7D72C3C086D006D06CB /* PresentationLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C30B7D62C3C086D006D06CB /* XCRemoteSwiftPackageReference "PresentationLayer" */;
+			productName = PresentationLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C30B7B72C3C07D6006D06CB /* Project object */;
 }
